@@ -1,0 +1,91 @@
+/* colors */
+/* fonts */
+/* breakpoints */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  font-size: 100%;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif; }
+
+body {
+  background: #FFCDD2;
+  margin: 30px auto 0;
+  padding: 0 15px; }
+
+h1, h2, h3, h5, p, li, a, span {
+  font-family: "Montserrat", sans-serif; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  min-height: 1px;
+  height: auto; }
+
+.main-card {
+  background: #D32F2F;
+  text-align: center;
+  max-width: 480px;
+  margin: auto;
+  padding: 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: solid 1px rgba(227, 0, 33, 0.7);
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 8px rgba(227, 0, 33, 0.3), 0 10px 25px 22px rgba(227, 0, 33, 0.112);
+  box-shadow: 0 5px 8px rgba(227, 0, 33, 0.3), 0 10px 25px 22px rgba(227, 0, 33, 0.112); }
+  .main-card__photo {
+    margin: auto;
+    width: 160px;
+    border: solid 1px #F5BF3F;
+    border-radius: 150px; }
+  .main-card__title {
+    padding-top: 40px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #FFFFFF;
+    font-weight: 300; }
+
+@medi (min-width: $phone-land) {
+  .main-card__title {
+    font-size: 32px; } }
+
+.jarois-sn {
+  padding-top: 30px; }
+  .jarois-sn__row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: distribute-space;
+    -ms-flex-pack: distribute-space;
+    justify-content: distribute-space;
+    padding: 10px; }
+  .jarois-sn__link {
+    padding: 0 30px;
+    color: #F5BF3F;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in; }
+    .jarois-sn__link:link, .jarois-sn__link:visited, .jarois-sn__link:active {
+      text-decoration: none; }
+    .jarois-sn__link:hover {
+      color: #FFCDD2; }
+  .jarois-sn__link > i {
+    -webkit-filter: drop-shadow(0 0 5px rgba(227, 0, 33, 0.8));
+    filter: drop-shadow(0 0 5px rgba(227, 0, 33, 0.8)); }
+  .jarois-sn__username {
+    color: #F5BF3F;
+    font-size: .9em;
+    font-weight: 300;
+    font-style: italic;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in; }
+  .jarois-sn:hover {
+    color: #727272; }
