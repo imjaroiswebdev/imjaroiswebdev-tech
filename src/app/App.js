@@ -1,9 +1,13 @@
 import React from 'react';
 import MainCard from './components/MainCard';
+import Footer from './components/Footer';
 
 const App = () => {
 	return (
-		<MainCard />
+		<div>
+			<MainCard />
+			<Footer />
+		</div>		
 	)
 }
 
