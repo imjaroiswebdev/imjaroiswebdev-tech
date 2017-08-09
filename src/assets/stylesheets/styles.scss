@@ -57,8 +57,7 @@ h1, h2, h3, h5, p, li, a, span {
 
 // Main styles classes
 .main-card {
-	// background: $primary-color;
-	background: linear-gradient(to bottom, rgba(227,0,33,1) 0%,rgba(249,83,0,1) 40%,rgba(211,47,47,1) 100%);
+	background: linear-gradient(to bottom, rgba(227,0,33,1) 0%,rgba(211,47,47,1) 40%,rgba(249,83,0,1) 100%);
 	text-align: center;
 	max-width: 480px;
 	margin: auto;
@@ -70,7 +69,7 @@ h1, h2, h3, h5, p, li, a, span {
 	border-radius: 10px;
 	box-shadow: 0 8px  10px rgba(227, 0, 33, .2),
 		0 10px 30px 15px rgba(227, 0, 33, .112) ;
-	animation: levitate 3s 5 ease-in-out;
+	// animation: levitate 3s 5 ease-in-out;
 
 	&__photo {
 		margin: auto;
@@ -81,7 +80,6 @@ h1, h2, h3, h5, p, li, a, span {
 
 	&__title {
 		padding-top: 40px;
-		margin-bottom: 0px;
 		font-size: 22px;
 		color: $primary-color-text;
 		font-weight: 300;
@@ -90,8 +88,12 @@ h1, h2, h3, h5, p, li, a, span {
 			font-size: 32px;
 		}
 	}
+}
 
-	&__sub {
+.self-typed {
+
+	&__sub, span {
+		display: inline;
 		font-size: 12px;
 		color: $primary-color-light;
 		font-weight: 400;
@@ -101,6 +103,10 @@ h1, h2, h3, h5, p, li, a, span {
 		@media (min-width: $phone-land) {
 			font-size: 16px;
 		}
+	}
+
+	span {
+		color: $accent-color;
 	}
 }
 
@@ -151,6 +157,8 @@ h1, h2, h3, h5, p, li, a, span {
 	color: $primary-text-color;
 	font-size: 12px;
 	font-family: $inconsolata;
+	max-width: 200px;
+	line-height: 2;
 
 	i {
 		color: $primary-color;
@@ -172,14 +180,5 @@ h1, h2, h3, h5, p, li, a, span {
 	}
 	50% {
 		transform: scale(1.05)
-	}
-}
-
-@keyframes levitate {
-	0%, 100% {
-		transform: translateY(0px)
-	}
-	50% {
-		transform: translateY(2px)
 	}
 }

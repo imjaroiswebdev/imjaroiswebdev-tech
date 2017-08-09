@@ -1,6 +1,6 @@
 import React from 'react';
 import JaroisSN from './JaroisSN';
-// import profilePic from '../../assets/images/Profile-closeup-02-480-optimize.jpg';
+import SelfType from './SelfType'
 
 const MainCard = () => {
 	return (
@@ -11,7 +11,8 @@ const MainCard = () => {
 				className="main-card__photo img-responsive"
 			/>
 			<h1 className="main-card__title">José Antonio Reyes</h1>
-			<h3 className="main-card__sub">Javascript Full Stak Web Developer</h3>
+			
+			<SelfType />
 			<JaroisSN />
 		</div>
 	)
