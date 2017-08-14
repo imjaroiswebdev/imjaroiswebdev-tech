@@ -6,6 +6,7 @@
   box-sizing: border-box; }
 
 html, body {
+  min-width: 320px;
   font-size: 100%;
   line-height: 1;
   font-family: "Montserrat", sans-serif; }
@@ -63,22 +64,30 @@ h1, h2, h3, h5, p, li, a, span {
       .main-card__title {
         font-size: 32px; } }
 
-.self-typed__sub, .self-typed span {
-  display: inline;
-  font-size: 12px;
-  color: #ffe8e9;
-  font-weight: 400;
-  font-family: "Inconsolata", monospace;
-  margin-bottom: 10px; }
+.self-typed {
+  height: 40px; }
   @media (min-width: 480px) {
-    .self-typed__sub, .self-typed span {
-      font-size: 16px; } }
-
-.self-typed span {
-  color: #F5BF3F; }
+    .self-typed {
+      height: auto; } }
+  .self-typed__sub, .self-typed span {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #ffe8e9;
+    font-weight: 400;
+    font-family: "Inconsolata", monospace;
+    margin-bottom: 10px; }
+    @media (min-width: 480px) {
+      .self-typed__sub, .self-typed span {
+        font-size: 16px; } }
+  .self-typed span {
+    color: #F5BF3F; }
 
 .jarois-sn {
-  padding-top: 30px; }
+  padding-top: 0px; }
+  @media (min-height: 480px) {
+    .jarois-sn {
+      padding-top: 30px; } }
   .jarois-sn__row {
     width: 100%;
     display: -webkit-box;
@@ -116,13 +125,13 @@ h1, h2, h3, h5, p, li, a, span {
   color: #212121;
   font-size: 12px;
   font-family: "Inconsolata", monospace;
-  max-width: 200px;
+  max-width: 280px;
   line-height: 2; }
-  .footer i {
+  .footer__heart {
     color: #E30021;
     margin: 0 5px;
-    -webkit-animation: beat 1s 15 ease-in;
-    animation: beat 1s 15 ease-in; }
+    -webkit-animation: beat 1s 30 ease-in;
+    animation: beat 1s 30 ease-in; }
   .footer a:link,
   .footer a:visited,
   .footer a:active {
