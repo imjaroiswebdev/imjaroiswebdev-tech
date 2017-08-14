@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import Typed from 'typed.js';
+import Emoji from './Emoji';
+import coffee from 'images/emoji/coffee';
+import octocat from 'images/emoji/octocat';
+
 
 class SelfType extends Component {
 	componentDidMount() {
@@ -22,12 +26,12 @@ class SelfType extends Component {
 				<div className="self-typed__strings">
 			    <h3><strong>Prestashop</strong> Shopping Cart Customizer</h3>
 			    <h3><strong>NodeJs</strong> + <strong>express</strong> + <strong>MongoDB</strong> Apps Programmer</h3>
-			    <h3>MVC Apps &amp; API REST Builder</h3>
-			    <h3>Social signin for apps</h3>
-			    <h3>Git and &#x2615; lover</h3>
+			    <h3>MVC Apps &amp; API REST <strong>Builder</strong></h3>
+			    <h3><strong>Social signin</strong> for apps</h3>
+			    <h3><Emoji icon={octocat} /> Git and <Emoji icon={coffee} /> lover</h3>
 			    <h3>#juniordevforlife</h3>
-			    <h3>SPA with React &amp; Redux development</h3>
-			    <h3>Proggresive Web Apps builder and amazed with them</h3>
+			    <h3><strong>SPA</strong> with <strong>React</strong> &amp; <strong>Redux</strong> development</h3>
+			    <h3><strong>Proggresive Web Apps</strong> builder and amazed with them</h3>
 			    <h3>Javascript Full Stack Web Developer</h3>
 				</div>
 				<div className="self-typed__sub" ref={(el) => {this.el = el}}></div>

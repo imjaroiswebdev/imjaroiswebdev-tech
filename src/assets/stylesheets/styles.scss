@@ -25,6 +25,7 @@ $mouse-keyb: 1170px;
 }
 
 html, body {
+	min-width: $phone-port;
 	font-size: 100%;
 	line-height: 1;
 	font-family: $montserrat;
@@ -91,10 +92,16 @@ h1, h2, h3, h5, p, li, a, span {
 }
 
 .self-typed {
+	height: 40px;
+	
+	@media (min-width: $phone-land) {
+		height: auto;
+	}
 
 	&__sub, span {
-		display: inline;
+		display: inline-block;
 		font-size: 12px;
+		line-height: 20px;
 		color: $primary-color-light;
 		font-weight: 400;
 		font-family: $inconsolata;
@@ -111,7 +118,11 @@ h1, h2, h3, h5, p, li, a, span {
 }
 
 .jarois-sn {
-	padding-top: 30px;
+	padding-top: 0px;
+
+	@media (min-height: $phone-land) {
+		padding-top: 30px;		
+	}
 
 	&__row {
 		width: 100%;
@@ -157,13 +168,13 @@ h1, h2, h3, h5, p, li, a, span {
 	color: $primary-text-color;
 	font-size: 12px;
 	font-family: $inconsolata;
-	max-width: 200px;
+	max-width: 280px;
 	line-height: 2;
 
-	i {
+	&__heart {
 		color: $primary-color;
 		margin: 0 5px;
-		animation: beat 1s 15 ease-in;
+		animation: beat 1s 30 ease-in;
 	}
 
 	a:link,

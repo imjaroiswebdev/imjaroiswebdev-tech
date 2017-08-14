@@ -36,8 +36,11 @@ let config = { // config object
         exclude: /node_modules/ // exclude searching for files in the node_modules directory
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpg|png|gif)$/i,
         loaders: ['file-loader?context=src/assets/images/&name=images/[path][name].[ext]', {  // images loader
+          // If the libpng12.so.0 dependecy start causing trouble then has to be installed manually
+          // with brew install libpng in Mac or installing the package libpng12-0_1.2.50-2+deb8u3_amd64.deb
+          // in Debian based systems
           loader: 'image-webpack-loader',
           query: {
             mozjpeg: {
