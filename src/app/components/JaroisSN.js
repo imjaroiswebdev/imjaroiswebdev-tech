@@ -7,12 +7,17 @@ const JaroisSN = () => {
 				<a
 					className="jarois-sn__link"
 					title="My Instagram @imajaroiswebdev"
-					href="http://www.instagram.com/imjaroiswebdev" target="_blank"><i className="fa fa-instagram fa-fw fa-lg" aria-hidden="true"></i>
+					href="https://urlgeni.us/instagram/9Dwc" target="_blank"><i className="fa fa-instagram fa-fw fa-lg" aria-hidden="true"></i>
 				</a>
 				<a
 					className="jarois-sn__link"
-					title="My code in Github"
+					title="My source code on Github"
 					href="https://github.com/imjaroiswebdev" target="_blank"><i className="fa fa-github-square fa-fw fa-lg" aria-hidden="true"></i>
+				</a>
+				<a
+					className="jarois-sn__link"
+					title="My code working on CODEPEN"
+					href="https://codepen.io/imjaroiswebdev" target="_blank"><i className="fa fa-codepen fa-fw fa-lg" aria-hidden="true"></i>
 				</a>
 				<a
 					className="jarois-sn__link"

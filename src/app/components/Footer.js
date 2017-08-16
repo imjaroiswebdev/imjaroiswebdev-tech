@@ -12,7 +12,7 @@ const Footer = () => {
 			in Santiago by
 			<a
 				href="https://github.com/imjaroiswebdev/"
-				title="Github Repository to this site"> José Antonio Reyes.
+				title="Github Repository of this site"> José Antonio Reyes.
 			</a>
 		</div>
 	)

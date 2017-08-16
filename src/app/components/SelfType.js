@@ -20,6 +20,11 @@ class SelfType extends Component {
 		this.typed = new Typed(this.el, settings);
 	}
 
+	restartTyping() {
+		this.typed.destroy();
+		this.typed.reset(true)
+	}
+
 	render() {
 		return (
 			<div className="self-typed">
@@ -34,7 +39,12 @@ class SelfType extends Component {
 			    <h3><strong>Proggresive Web Apps</strong> builder and amazed with them</h3>
 			    <h3>Javascript Full Stack Web Developer</h3>
 				</div>
-				<div className="self-typed__sub" ref={(el) => {this.el = el}}></div>
+				<div
+					className="self-typed__sub" 
+					ref={(el) => {this.el = el}}
+					onClick={ () => this.restartTyping() }
+				>
+				</div>
 			</div>
 		)
 	}
