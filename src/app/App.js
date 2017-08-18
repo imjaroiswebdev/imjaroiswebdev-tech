@@ -5,8 +5,8 @@ import Footer from './components/Footer';
 const App = () => {
 	return (
 		<div>
-			<MainCard />
-			<Footer />
+			{ MainCard() }
+			{ Footer() }
 		</div>		
 	)
 }

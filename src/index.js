@@ -5,7 +5,7 @@ import App from './app/App';
 import './assets/stylesheets/styles.scss'
 
 ReactDOM.render (
-	<App />,
+	App(),
 	document.getElementById('root')
 
 )

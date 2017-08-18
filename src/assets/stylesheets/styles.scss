@@ -70,14 +70,6 @@ h1, h2, h3, h5, p, li, a, span {
 	border-radius: 10px;
 	box-shadow: 0 8px  10px rgba(227, 0, 33, .2),
 		0 10px 30px 15px rgba(227, 0, 33, .112) ;
-	// animation: levitate 3s 5 ease-in-out;
-
-	&__photo {
-		margin: auto;
-		width: 160px;
-		border: solid 1px $accent-color;
-		border-radius: 150px;
-	}
 
 	&__title {
 		padding-top: 40px;
@@ -89,6 +81,31 @@ h1, h2, h3, h5, p, li, a, span {
 			font-size: 32px;
 		}
 	}
+}
+
+.profile-img {
+  background: $primary-color no-repeat;
+  background-size: cover;
+
+  position: relative;
+	width: 160px;
+	border: solid 1px $accent-color;
+	border-radius: 150px;
+  overflow: hidden;
+
+  &__photo {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  filter: blur(10px);
+	  transform: scale(1);
+	  transition: filter 1s linear;
+  }
+
+  &__loaded {
+  	filter: none;  	
+  }
 }
 
 .self-typed {
