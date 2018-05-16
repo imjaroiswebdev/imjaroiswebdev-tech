@@ -3,9 +3,9 @@
 
 # AUTHOR
 
-    <José Antonio Reyes> -- <Developer> -- <@imjaroiswebdev>
+    <José Antonio Reyes> -- <Developer> -- <imjaroiswebdev@gmail.com>
 
 # TECHNOLOGY COLOPHON
 
     ReactJs, Webpack, Sass, Typed.js
-    
+
