@@ -83,7 +83,7 @@ h1, h2, h3, h5, p, li, a, span {
   }
 } */
 
-.profile-img {
+/* .profile-img {
   background: var(--primary-color) no-repeat;
   background-size: cover;
 
@@ -106,9 +106,9 @@ h1, h2, h3, h5, p, li, a, span {
   &__loaded {
     filter: none;
   }
-}
+} */
 
-.self-typed {
+/* .self-typed {
   height: 40px;
 
   @media (min-width: var(--phone-land)) {
@@ -132,7 +132,7 @@ h1, h2, h3, h5, p, li, a, span {
   span {
     color: var(--accent-color);
   }
-}
+} */
 
 .jarois-sn {
   padding-top: 0px;
