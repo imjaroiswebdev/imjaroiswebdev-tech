@@ -4,7 +4,7 @@ import ProfileImg from './ProfileImg';
 import SelfType from './SelfType'
 import JaroisSN from './JaroisSN';
 
-const MainCard = styled(({ className }) => {
+const MainCard = styled(({ className, theme }) => {
   return (
     <div className={className}>
       <ProfileImg />
@@ -29,13 +29,13 @@ const MainCard = styled(({ className }) => {
   box-shadow: 0 8px  10px rgba(227, 0, 33, .2),
     0 10px 30px 15px rgba(227, 0, 33, .112) ;
 
-  .title {
+  h1.title {
     padding-top: 40px;
     font-size: 22px;
     color: var(--primary-color-text);
     font-weight: 300;
 
-    @media (min-width: var(--phone-land)) {
+    @media (min-width: ${ props => props.theme.phoneLand }) {
       font-size: 32px;
     }
   }

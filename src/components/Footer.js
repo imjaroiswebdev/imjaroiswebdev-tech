@@ -7,7 +7,7 @@ import reactEmoji from '../assets/images/emoji/react.png';
 const Footer = styled(({ className }) => {
   return (
     <div className={className + " ma"}>
-      2017 | Made with<Emoji className="heart" icon={heart} size="14px" title="LOVE" />
+      { (new Date()).toLocaleDateString('es').split('/')[2] } | Made with<Emoji className="heart" icon={heart} size="14px" title="LOVE" />
       using ReactJs<Emoji icon={reactEmoji} size="14px" title="ReactJs" />
       in Santiago by
       <a
@@ -22,7 +22,7 @@ const Footer = styled(({ className }) => {
   color: var(--primary-text-color);
   font-size: 12px;
   font-family: var(--inconsolata);
-  max-width: 280px;
+  max-width: 300px;
   line-height: 2;
 
   .heart {
