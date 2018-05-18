@@ -19,7 +19,7 @@ class ProfileImg extends Component {
   // image file is loaded, then just render the loaded image
   // and applies a class that removes the blur filter of the photo
   componentDidMount() {
-    fetch(profile)
+    process.env.NODE_ENV !== 'test' && fetch(profile)
       .then(response => response.blob())
       .then(imgBlob => {
         const photoUrl = URL.createObjectURL(imgBlob);
